@@ -1,0 +1,14 @@
+# Clock works at 100Mhz
+NET "clk" LOC = J1;
+
+# serial port receive & transmit
+NET "uart_rx" LOC = D1;
+NET "uart_tx" LOC = B1;
+
+# Async inputs anyway
+NET "uart_rx" TIG;
+NET "uart_tx" TIG;
+
+NET "clk" TNM_NET = "clk";
+TIMESPEC TS_clk = PERIOD "clk" 100 MHz HIGH 50 %;
+
