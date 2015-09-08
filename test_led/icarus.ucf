@@ -1,0 +1,8 @@
+# Clock works at 100Mhz
+NET "clk" LOC = J1;
+
+NET "led[0]" LOC = "A18";
+NET "led[1]" LOC = "B18";
+NET "led[2]" LOC = "A17";
+NET "led[3]" LOC = "A16";
+
